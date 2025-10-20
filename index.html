@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A comprehensive design system style guide for consistent web design">
+    <title>Design System Style Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header role="banner">
+            <h1>Design System</h1>
+            <p>A comprehensive style guide for consistent web design</p>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="navigation" role="navigation" aria-label="Main navigation">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#colors" class="navigation__link">Colors</a></li>
+                <li class="navigation__item"><a href="#fonts" class="navigation__link">Typography</a></li>
+                <li class="navigation__item"><a href="#text-styles" class="navigation__link">Text Styles</a></li>
+                <li class="navigation__item"><a href="#buttons" class="navigation__link">Buttons</a></li>
+                <li class="navigation__item"><a href="#spacing" class="navigation__link">Spacing</a></li>
+            </ul>
+        </nav>
+
+        <!-- Colors Section -->
+        <section id="colors" aria-labelledby="colors-heading">
+            <h2 id="colors-heading">Color Palette</h2>
+            <p class="section-description">
+                Our color palette is designed to create a cohesive visual identity. Use Primary Purple for main actions 
+                and branding elements, Deep Violet for secondary emphasis, Success Green for positive feedback, 
+                and Alert Red for errors or warnings. Light Gray provides subtle backgrounds, while Dark Slate 
+                ensures readable text content.
+            </p>
+            <div class="color-grid">
+                <div class="color-card">
+                    <div class="color-display color-display--primary"></div>
+                    <div class="color-info">
+                        <div class="color-name">Primary Purple</div>
+                        <div class="color-value">--color-primary: #667eea</div>
+                        <p class="color-description">Main brand color used for primary buttons, links, and key interactive elements.</p>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-display color-display--secondary"></div>
+                    <div class="color-info">
+                        <div class="color-name">Deep Violet</div>
+                        <div class="color-value">--color-secondary: #764ba2</div>
+                        <p class="color-description">Secondary brand color for accents, hover states, and visual hierarchy.</p>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-display color-display--success"></div>
+                    <div class="color-info">
+                        <div class="color-name">Success Green</div>
+                        <div class="color-value">--color-success: #48bb78</div>
+                        <p class="color-description">Used for success messages, confirmations, and positive actions.</p>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-display color-display--danger"></div>
+                    <div class="color-info">
+                        <div class="color-name">Alert Red</div>
+                        <div class="color-value">--color-danger: #f56565</div>
+                        <p class="color-description">Error states, warnings, and destructive actions.</p>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-display color-display--light"></div>
+                    <div class="color-info">
+                        <div class="color-name">Light Gray</div>
+                        <div class="color-value">--color-background: #edf2f7</div>
+                        <p class="color-description">Background color for sections, cards, and subtle divisions.</p>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-display color-display--dark"></div>
+                    <div class="color-info">
+                        <div class="color-name">Dark Slate</div>
+                        <div class="color-value">--color-text-primary: #1a202c</div>
+                        <p class="color-description">Primary text color and dark UI elements.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fonts Section -->
+        <section id="fonts" aria-labelledby="fonts-heading">
+            <h2 id="fonts-heading">Typography</h2>
+            <p class="section-description">
+                Our typography system uses three carefully selected typefaces. Inter serves as our primary sans-serif 
+                for body text and UI elements, ensuring excellent readability. Playfair Display adds elegance to headings 
+                and titles. Fira Code is reserved for code snippets and technical content. Always maintain proper hierarchy 
+                by using appropriate font weights and sizes.
+            </p>
+            
+            <div class="font-showcase">
+                <div class="font-name" style="font-family: 'Inter', sans-serif;">Inter</div>
+                <p class="font-usage">Primary font for body text, UI elements, and general content.</p>
+                <div class="font-example">
+                    <div class="font-label">Regular (400)</div>
+                    <div class="font-demo" style="font-family: 'Inter', sans-serif; font-weight: 400;">The quick brown fox jumps over the lazy dog</div>
+                </div>
+                <div class="font-example">
+                    <div class="font-label">Medium (500)</div>
+                    <div class="font-demo" style="font-family: 'Inter', sans-serif; font-weight: 500;">The quick brown fox jumps over the lazy dog</div>
+                </div>
+                <div class="font-example">
+                    <div class="font-label">Semi-Bold (600)</div>
+                    <div class="font-demo" style="font-family: 'Inter', sans-serif; font-weight: 600;">The quick brown fox jumps over the lazy dog</div>
+                </div>
+                <div class="font-example">
+                    <div class="font-label">Bold (700)</div>
+                    <div class="font-demo" style="font-family: 'Inter', sans-serif; font-weight: 700;">The quick brown fox jumps over the lazy dog</div>
+                </div>
+                <div class="font-example">
+                    <div class="font-label">Italic</div>
+                    <div class="font-demo" style="font-family: 'Inter', sans-serif; font-style: italic;">The quick brown fox jumps over the lazy dog</div>
+                </div>
+            </div>
+
+            <div class="font-showcase">
+                <div class="font-name" style="font-family: 'Playfair Display', serif;">Playfair Display</div>
+                <p class="font-usage">Use for main headings, hero titles, and decorative text.</p>
+                <div class="font-example">
+                    <div class="font-label">Regular (400)</div>
+                    <div class="font-demo" style="font-family: 'Playfair Display', serif; font-weight: 400;">The quick brown fox jumps over the lazy dog</div>
+                </div>
+                <div class="font-example">
+                    <div class="font-label">Bold (700)</div>
+                    <div class="font-demo" style="font-family: 'Playfair Display', serif; font-weight: 700;">The quick brown fox jumps over the lazy dog</div>
+                </div>
+            </div>
+
+            <div class="font-showcase">
+                <div class="font-name" style="font-family: 'Fira Code', monospace;">Fira Code</div>
+                <p class="font-usage">Reserved for code blocks, technical documentation, and inline code.</p>
+                <div class="font-example">
+                    <div class="font-label">Regular (400)</div>
+                    <div class="font-demo" style="font-family: 'Fira Code', monospace; font-weight: 400;">const message = "Hello World";</div>
+                </div>
+                <div class="font-example">
+                    <div class="font-label">Medium (500)</div>
+                    <div class="font-demo" style="font-family: 'Fira Code', monospace; font-weight: 500;">function calculate(x, y) { return x + y; }</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Text Styles Section -->
+        <section id="text-styles" aria-labelledby="text-styles-heading">
+            <h2 id="text-styles-heading">Text Styles</h2>
+            <p class="section-description">
+                These predefined text styles ensure consistency across all pages. Use H1 for page titles, H2 for major 
+                sections, and H3 for subsections. Body text should use the paragraph style, while links maintain the 
+                defined color and hover states. Code elements use monospace font with a distinct background for clarity.
+            </p>
+
+            <div class="typography-example">
+                <div class="element-name">Main Heading (H1)</div>
+                <p class="element-usage">Use once per page for the main page title or hero heading.</p>
+                <div class="style-rules">
+                    font-family: 'Playfair Display', serif;
+                    font-size: 3.5rem;
+                    font-weight: 700;
+                    color: var(--color-text-primary);
+                    line-height: 1.2;
+                </div>
+                <div class="style-preview style-h1">This is a Main Heading</div>
+            </div>
+
+            <div class="typography-example">
+                <div class="element-name">Section Heading (H2)</div>
+                <p class="element-usage">Use for major content sections and primary divisions on the page.</p>
+                <div class="style-rules">
+                    font-family: 'Playfair Display', serif;
+                    font-size: 2.5rem;
+                    font-weight: 700;
+                    color: var(--color-text-primary);
+                    line-height: 1.3;
+                    border-bottom: 3px solid var(--color-primary);
+                </div>
+                <div class="style-preview style-h2">This is a Section Heading</div>
+            </div>
+
+            <div class="typography-example">
+                <div class="element-name">Subsection Heading (H3)</div>
+                <p class="element-usage">Use for subsections within major content areas.</p>
+                <div class="style-rules">
+                    font-family: 'Inter', sans-serif;
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    color: var(--color-text-secondary);
+                    line-height: 1.4;
+                </div>
+                <div class="style-preview style-h3">This is a Subsection Heading</div>
+            </div>
+
+            <div class="typography-example">
+                <div class="element-name">Body Text (Paragraph)</div>
+                <p class="element-usage">Default style for all body content and general text.</p>
+                <div class="style-rules">
+                    font-family: 'Inter', sans-serif;
+                    font-size: 1rem;
+                    font-weight: 400;
+                    color: var(--color-text-body);
+                    line-height: 1.6;
+                </div>
+                <div class="style-preview style-paragraph">This is body text. It's designed to be highly readable and comfortable for extended reading. The line height and color are optimized for maximum legibility across different screen sizes and devices.</div>
+            </div>
+
+            <div class="typography-example">
+                <div class="element-name">Link Text</div>
+                <p class="element-usage">Use for all clickable text links throughout the site.</p>
+                <div class="style-rules">
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 500;
+                    color: var(--color-primary);
+                    text-decoration: underline;
+                    transition: color 0.3s ease;
+                </div>
+                <div class="style-preview"><a href="#" class="style-link">This is a clickable link</a></div>
+            </div>
+
+            <div class="typography-example">
+                <div class="element-name">Code Text</div>
+                <p class="element-usage">Use for inline code snippets within body text.</p>
+                <div class="style-rules">
+                    font-family: 'Fira Code', monospace;
+                    font-size: 0.9rem;
+                    background-color: var(--color-code-bg);
+                    padding: 2px 6px;
+                    border-radius: 4px;
+                    color: var(--color-danger);
+                </div>
+                <div class="style-preview style-paragraph">Use <code class="style-code">console.log()</code> to debug your application.</div>
+            </div>
+        </section>
+
+        <!-- Buttons Section -->
+        <section id="buttons" aria-labelledby="buttons-heading">
+            <h2 id="buttons-heading">Buttons</h2>
+            <p class="section-description">
+                Buttons are key interactive elements. Use Primary buttons for main actions, Secondary buttons for 
+                alternative actions, Success buttons for confirmations, and Danger buttons for destructive actions. 
+                Ensure proper spacing around buttons and avoid using too many primary buttons on a single page.
+            </p>
+
+            <div class="button-showcase">
+                <div class="button-example">
+                    <div class="element-name">Primary Button</div>
+                    <p class="element-usage">Main call-to-action buttons (e.g., "Sign Up", "Get Started")</p>
+                    <button class="btn btn--primary">Click Me</button>
+                    <div class="style-rules">
+                        background-color: var(--color-primary);
+                        color: white;
+                        padding: 12px 24px;
+                        border-radius: 8px;
+                        font-weight: 600;
+                    </div>
+                </div>
+
+                <div class="button-example">
+                    <div class="element-name">Secondary Button</div>
+                    <p class="element-usage">Secondary actions or alternative options</p>
+                    <button class="btn btn--secondary">Click Me</button>
+                    <div class="style-rules">
+                        background-color: transparent;
+                        color: var(--color-primary);
+                        border: 2px solid var(--color-primary);
+                        padding: 12px 24px;
+                        border-radius: 8px;
+                        font-weight: 600;
+                    </div>
+                </div>
+
+                <div class="button-example">
+                    <div class="element-name">Success Button</div>
+                    <p class="element-usage">Positive actions like form submissions or confirmations</p>
+                    <button class="btn btn--success">Submit</button>
+                    <div class="style-rules">
+                        background-color: var(--color-success);
+                        color: white;
+                        padding: 12px 24px;
+                        border-radius: 8px;
+                        font-weight: 600;
+                    </div>
+                </div>
+
+                <div class="button-example">
+                    <div class="element-name">Danger Button</div>
+                    <p class="element-usage">Destructive actions like deletions or cancellations</p>
+                    <button class="btn btn--danger">Delete</button>
+                    <div class="style-rules">
+                        background-color: var(--color-danger);
+                        color: white;
+                        padding: 12px 24px;
+                        border-radius: 8px;
+                        font-weight: 600;
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Spacing Section -->
+        <section id="spacing" aria-labelledby="spacing-heading">
+            <h2 id="spacing-heading">Spacing & Layout</h2>
+            <p class="section-description">
+                Consistent spacing creates visual rhythm and improves readability. Use the spacing scale below for margins, 
+                padding, and gaps throughout your designs. Smaller values (xs, sm) work well for tight groupings, while 
+                larger values (lg, xl) create clear separation between major sections.
+            </p>
+
+            <div class="spacing-grid">
+                <div class="spacing-item">
+                    <div class="spacing-visual spacing-visual--xs"></div>
+                    <div class="spacing-info">
+                        <div class="spacing-name">Extra Small</div>
+                        <div class="spacing-value">--spacing-xs: 4px</div>
+                        <p class="spacing-usage">Tight spacing between related elements</p>
+                    </div>
+                </div>
+
+                <div class="spacing-item">
+                    <div class="spacing-visual spacing-visual--sm"></div>
+                    <div class="spacing-info">
+                        <div class="spacing-name">Small</div>
+                        <div class="spacing-value">--spacing-sm: 8px</div>
+                        <p class="spacing-usage">Small gaps, icon spacing</p>
+                    </div>
+                </div>
+
+                <div class="spacing-item">
+                    <div class="spacing-visual spacing-visual--md"></div>
+                    <div class="spacing-info">
+                        <div class="spacing-name">Medium</div>
+                        <div class="spacing-value">--spacing-md: 16px</div>
+                        <p class="spacing-usage">Default spacing for most elements</p>
+                    </div>
+                </div>
+
+                <div class="spacing-item">
+                    <div class="spacing-visual spacing-visual--lg"></div>
+                    <div class="spacing-info">
+                        <div class="spacing-name">Large</div>
+                        <div class="spacing-value">--spacing-lg: 24px</div>
+                        <p class="spacing-usage">Section padding, card spacing</p>
+                    </div>
+                </div>
+
+                <div class="spacing-item">
+                    <div class="spacing-visual spacing-visual--xl"></div>
+                    <div class="spacing-info">
+                        <div class="spacing-name">Extra Large</div>
+                        <div class="spacing-value">--spacing-xl: 32px</div>
+                        <p class="spacing-usage">Major section separation</p>
+                    </div>
+                </div>
+
+                <div class="spacing-item">
+                    <div class="spacing-visual spacing-visual--xxl"></div>
+                    <div class="spacing-info">
+                        <div class="spacing-name">2X Large</div>
+                        <div class="spacing-value">--spacing-xxl: 48px</div>
+                        <p class="spacing-usage">Hero sections, large containers</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer role="contentinfo" class="footer">
+            <p>&copy; 2025 Design System. Created for educational purposes.</p>
+        </footer>
+    </div>
+</body>
+</html>
